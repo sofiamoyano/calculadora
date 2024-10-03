@@ -1,9 +1,21 @@
+
 def sumar():
         a = float(input("Ingrese el primer número para sumar: "))
         b = float(input("Ingrese el segundo número para sumar: "))
         resultado = a + b
         print(f"El resultado es: {resultado}")
 
+def restar():
+        a = float(input("Ingrese el primer número para restar: "))
+        b = float(input("Ingrese el segundo número para restar: "))
+        resultado = a - b
+        print(f"El resultado es: {resultado}")
+
+def multiplicar():
+        a = float(input("Ingrese el primer número para multiplicar: "))
+        b = float(input("Ingrese el segundo número para multiplicar: "))
+        resultado = a * b
+        print(f"El resultado es: {resultado}")
 
 def dividir():
         a = float(input("Ingrese el primer número: "))
@@ -17,15 +29,22 @@ def dividir():
 
 def menu():
     print("1. Sumar")
-    print("2. Dividir")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
     opcion = input("Elige una opción: ")
     
     if opcion == "1":
         sumar()
     elif opcion == "2":
+        restar()
+    elif opcion == "3":
+        multiplicar()
+    elif opcion == "4":
         dividir()
     else:
         print("Opción no válida")
 
 menu()
+
 
