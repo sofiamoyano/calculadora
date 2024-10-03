@@ -1,9 +1,12 @@
 
 def sumar():
+    try:
         a = float(input("Ingrese el primer número para sumar: "))
         b = float(input("Ingrese el segundo número para sumar: "))
         resultado = a + b
         print(f"El resultado es: {resultado}")
+    except ValueError:
+        print("Error: Ingrese valores numéricos válidos.")
 
 def restar():
         a = float(input("Ingrese el primer número para restar: "))
