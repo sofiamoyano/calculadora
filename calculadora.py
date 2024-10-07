@@ -30,6 +30,9 @@ def dividir():
             resultado = a / b
             print(f"El resultado es: {resultado}")
 
+def calcularPotencia (a,b):
+     return  a ** b
+
 def menu():
     print("1. Sumar")
     print("2. Restar")
